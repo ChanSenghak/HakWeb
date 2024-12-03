@@ -43,11 +43,11 @@ body {
     
 }
 .mypicture img{
-    width: 382px;
+    width: 600px;
 }
 .mypicture {
-    margin-left: 100px;
-    margin-right: 32px;
+    margin-left: 170px;
+   
 }
 .main {
     cursor: pointer;
