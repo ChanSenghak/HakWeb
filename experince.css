@@ -3,7 +3,7 @@
     margin: 0%;
 }
 body{
-    background-image: url(images/background.jpg);
+    background-color: black;
     background-size: 100% 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -19,6 +19,7 @@ body{
     margin-top: 10px;
     margin-left: 53px;
     font-size: 50px;
+
 }
 .main {
      cursor: pointer;
@@ -30,13 +31,13 @@ body{
     justify-content: space-around;
     list-style: none;
     margin-top: 10px;
-    color: black;
 }
 .flexbox a {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
-    color: black;
+    color: white;
+    box-shadow: 4px 4px 30px red;
     align-items: center;
 }
