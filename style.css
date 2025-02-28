@@ -151,7 +151,7 @@ body {
 
 
 
-/* The running line animation */
+/* The running line animation aroung screen lap top*/
 .lightontop::before, .lightontop::after {
     content: '';
     position: absolute;
@@ -172,6 +172,46 @@ body {
   
   /* Keyframes for running effect */
   @keyframes run-border {
+    0% {
+        clip-path: inset(0% 100% 0% 0%); /* Line starts at the top-left */
+    }
+    25% {
+        clip-path: inset(0% 0% 0% 0%); /* Line moves down the right side */
+    }
+    50% {
+        clip-path: inset(0% 0% 0% 0%); /* Line moves along the bottom */
+    }
+    75% {
+        clip-path: inset(100% 0% 0% 0%); /* Line moves up the left side */
+    }
+    100% {
+        clip-path: inset(0% 0% 0% 0%); /* Back to the start */
+    }
+  }
+
+
+
+/* The running line animation around box Hello guys*/
+  .animationL::before, .animationL::after {
+    content: '';
+    position: absolute;
+    border: 3px solid rgba(0, 213, 255, 0.8); /* Neon-colored lines */
+    border-radius: 10px; /* Match the border-radius of the main container */
+    width: 21%;
+    height: 10%;
+    top: 30.7%;
+    left: 48.9vh;
+    animation: run-borderL 5s linear infinite;
+  }
+  
+  /* Inner line for smoother effect */
+  .animationL::after {
+    border-color: rgb(255, 0, 0); /* Slightly dimmer inner line */
+    animation-delay: 1s; /* Delay for second line */
+  }
+  
+  /* Keyframes for running effect */
+  @keyframes run-borderL {
     0% {
         clip-path: inset(0% 100% 0% 0%); /* Line starts at the top-left */
     }
